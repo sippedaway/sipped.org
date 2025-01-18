@@ -8,7 +8,7 @@
 [![GitHub last commit](https://img.shields.io/github/last-commit/sippedaway/sipped.org
 )](#)
 
-# sipped.org
+# [sipped.org](https://sipped.org)
 personal portfolio website. interactive, unique, fun.
 
 ### development
