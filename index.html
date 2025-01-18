@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>sipped.org</title>
+    <link rel="icon" href="./assets/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+</head>
+
+<body>
+    <div id="loading-screen">
+        <div class="loader"></div>
+    </div>
+    <div id="ls-layer0"></div>
+
+    <div id="mobile-screen">
+        <div class="message">
+            <h1>well, no..</h1>
+            <p>this website is extremely unoptimized and will not work with mobile/smaller screens. i am SO sorry but a mobile sipped.org version will come out in the coming weeks i hope :)</p>
+        </div>
+    </div>
+
+    <div class="bg">
+        <img src="./assets/bar/bar.png" class="bgitem barbg"><img>
+
+        <img src="./assets/bg/0.png" class="bgitem l0"><img>
+        <img src="./assets/bg/1.png" class="bgitem l1"><img>
+        <img src="./assets/bg/2.png" class="bgitem movable"><img>
+        <img src="./assets/bg/3.png" class="bgitem movable l3"><img>
+    </div>
+
+    <div class="cursor"></div>
+    <div class="cursor drawingc"></div>
+
+    <div class="circle movable">
+        <div class="bgtext">
+            <p>const bg-text = document.querySelector('.bgtext'); text.innerHTML = 'sipped!!!!'.split('').map((char, i) => `span style="transform:rotate(${7 * i}deg)">${char}/span`).join('');</p>
+        </div>
+    </div>
+
+    <div class="page">
+
+        <div class="content" id="content">
+
+            <div class="phone-container" id="phone-container">
+                <div class="home-page" id="home-page">
+                    <img src="./assets/phone/phone.png" class="phone-image"></img>
+
+                    <img src="./assets/phone/app1/bg.png" id="app1-bg" class="ia app1"></img>
+                    <img src="./assets/phone/app1/icon.png" id="app1-i" class="ia app1"></img>
+
+                    <img src="./assets/phone/app2/draw-bg.png" id="app2-bg" class="ia app2"></img>
+                    <img src="./assets/phone/app2/draw-icon.png" id="app2-i" class="ia app2"></img>
+
+                    <img src="./assets/phone/app3/bg.png" id="app3-bg" class="ia app3"></img>
+                    <img src="./assets/phone/app3/icon.png" id="app3-i" class="ia app3"></img>
+
+                    <img src="./assets/phone/app4/bg.png" id="app4-bg" class="ia app4"></img>
+                    <img src="./assets/phone/app4/icon.png" id="app4-i" class="ia app4"></img>
+
+                    <img src="./assets/phone/app5/bg.png" id="app5-bg" class="ia app5"></img>
+                    <img src="./assets/phone/app5/icon.png" id="app5-i" class="ia app5"></img>
+
+                    <img src="./assets/phone/app6/bg.png" id="app6-bg" class="ia app6"></img>
+                    <img src="./assets/phone/app6/icon.png" id="app6-i" class="ia app6"></img>
+                </div>
+
+                <div class="app1-page" id="app1-page" hidden>
+                    <img src="./assets/phone/app1/inside.png" class="phone-image"></img>
+
+                    <p id="hcjtext" class="ia app1-inside-text hcj"></p>
+                    <p id="ueutext" class="ia app1-inside-text ueu"></p>
+
+                    <img src="./assets/buttons/next-bg.png" id="app1-next" class="ia app1-next"></img>
+                    <img src="./assets/buttons/next-icon.png" id="app1-next-icn" class="ia app1-next"></img>
+
+                    <img src="./assets/phone/app1/sipped.png" class="ia app1-sipped"></img>
+                    <img src="./assets/phone/app1/hcj.png" id="app1-hcj" class="ia app1-hcj"></img>
+                    <img src="./assets/phone/app1/ueu.png" id="app1-ueu" class="ia app1-ueu"></img>
+                </div>
+
+                <div class="app1-page" id="app1-page2" hidden>
+                    <img src="./assets/phone/app1/inside.png" class="phone-image"></img>
+
+                    <p id="app1p2-inside-text" class="app1-inside-text"> </p>
+
+                    <img src="./assets/phone/app1/cats.png" id="cats" class="ia app1p2-cats"></img>
+                    <img src="./assets/phone/app1/vibe.png" id="vibe" class="ia app1p2-vibe"></img>
+                    <img src="./assets/phone/app1/morecatz.png" id="cat" class="ia app1p2-cat"></img>
+
+                    <img src="./assets/buttons/next-bg.png" id="app1p2-next" class="ia app1-next"></img>
+                    <img src="./assets/buttons/home-icon.png" id="app1p2-next-icn" class="ia app1-next" style="left: 22%;"></img>
+                </div>
+
+                <div class="app2-page" id="app2-page" hidden>
+                    <div class="app2-phonecontainer">
+                        <img src="./assets/phone/app2/bg.png" class="app2-phoneimage" style="z-index: 4;"></img>
+                        <img src="./assets/phone/app2/border.png" class="app2-phoneimage" style="pointer-events: none; z-index: 7;"></img>
+                    </div>
+
+                    <div id="canvas_div">
+                        <canvas id="canvas" width="853" height="427"></canvas>
+                    </div>
+
+                    <img src="./assets/phone/app2/draw-bg.png" id="app2-clear" class="ia app2-btn"></img>
+                    <img src="./assets/buttons/draw-clear.png" id="app2-clear-icn" class="ia app2-btn"></img>
+
+                    <img src="./assets/phone/app2/draw-bg.png" id="app2-back" class="ia app2-btn app2-back"></img>
+                    <img src="./assets/buttons/home.png" id="app2-back-icn" class="ia app2-btn app2-back"></img>
+                </div>
+
+                <div class="app3-page" id="app3-page" hidden>
+                    <img src="./assets/phone/app3/inside.png" class="phone-image"></img>
+
+                    <div class="horizontal-scroll" id="h-scroll">
+                        <img src="./assets/phone/app3/bg.png" id="app3-left" class="ia app2-btn app3-left"></img>
+                        <img src="./assets/buttons/leftarrow.png" id="app3-left-icn" class="ia app2-btn app3-left"></img>
+
+                        <img class="photo-item" id="photo-item" src="./pictures/1.jpg"></img>
+
+                        <img src="./assets/phone/app3/bg.png" id="app3-right" class="ia app2-btn app3-right"></img>
+                        <img src="./assets/buttons/rightarrow.png" id="app3-right-icn" class="ia app2-btn app3-right"></img>
+                    </div>
+
+                    <p id="app3-text" class="ia app3-text"></p>
+
+                    <img src="./assets/phone/app3/bg.png" id="app3-back" class="ia app2-btn app2-back"></img>
+                    <img src="./assets/buttons/home-white.png" id="app3-back-icn" class="ia app2-btn app2-back"></img>
+                </div>
+
+                <div class="app4-page" id="app4-page1" hidden>
+                    <img src="./assets/phone/app4/inside.png" class="phone-image"></img>
+
+                    <img src="./assets/phone/app4/bg.png" id="app4-back" class="ia app2-btn"></img>
+                    <img src="./assets/buttons/home-white.png" id="app4-back-icn" class="ia app2-btn"></img>
+
+                    <img src="./assets/phone/app4/bg.png" id="app4-next" class="ia app2-btn app4-back"></img>
+                    <img src="./assets/buttons/rightarrow.png" id="app4-next-icn" class="ia app2-btn app4-back"></img>
+
+                    <p id="am-text" style="left: 21%;" class="ia app1-inside-text"></p>
+                    <img src="./assets/phone/app4/am.png" id="app4-am" class="ia app4-am"></img>
+                    <img src="./assets/phone/app4/am-ss.png" id="app4-amss" class="ia app4-amss"></img>
+
+                    <img src="./assets/buttons/next-bg.png" id="app4-visit" class="ia app1-next" style="top: 62%;"></img>
+                    <img src="./assets/buttons/visit.png" id="app4-visit-icn" class="ia app1-next" style="top: 62%; left: 22%;"></img>
+                </div>
+
+                <div class="app4-page" id="app4-page2" hidden>
+                    <img src="./assets/phone/app4/inside2.png" class="phone-image"></img>
+
+                    <img src="./assets/phone/app4/bg.png" id="app4p2-back" class="ia app2-btn"></img>
+                    <img src="./assets/buttons/leftarrow.png" id="app4p2-back-icn" class="ia app2-btn"></img>
+
+                    <img src="./assets/phone/app4/bg.png" id="app4p2-next" class="ia app2-btn app4-back"></img>
+                    <img src="./assets/buttons/rightarrow.png" id="app4p2-next-icn" class="ia app2-btn app4-back"></img>
+
+                    <p id="so-text" style="left: 21%;" class="ia app4p2-inside-text"></p>
+                    <img src="./assets/phone/app4/so.png" id="app4-so" class="ia app4-so"></img>
+                    <img src="./assets/phone/app4/so-ss.png" id="app4-soss" class="ia app4-soss"></img>
+
+                    <img src="./assets/buttons/next-bg.png" id="app4-lm" class="ia app1-next" style="top: 62%;"></img>
+                    <img src="./assets/buttons/learnmore.png" id="app4-lm-icn" class="ia app1-next" style="top: 62%; left: 22%;"></img>
+                </div>
+
+                <div class="app4-emptypage" id="app4-emptypage" hidden>
+                    <img src="./assets/phone/app4/inside.png" class="phone-image"></img>
+
+                    <img src="./assets/phone/app4/ti.png" id="app4-ti" class="ia app4-ti"></img>
+
+                    <img src="./assets/phone/app4/bg.png" id="app4ep-back" class="ia app2-btn"></img>
+                    <img src="./assets/buttons/leftarrow.png" id="app4ep-back-icn" class="ia app2-btn"></img>
+
+                    <img src="./assets/buttons/next-bg.png" id="app4ep-bg" class="ia app1-next" style="top: 62%;"></img>
+                    <img src="./assets/buttons/home-icon.png" id="app4ep-icn" class="ia app1-next" style="top: 62%; left: 22%;"></img>
+                </div>
+
+                <div class="app5-page" id="app5-page" hidden>
+                    <img src="./assets/phone/app5/inside.png" class="phone-image"></img>
+
+                    <div id="input-area" class="ia app5-terminal">
+                        <span id="terminal" class="ia app5-terminal"></span>
+                    </div>
+                </div>
+
+                <div class="app6-page" id="app6-page" hidden>
+                    <div class="app2-phonecontainer">
+                        <img src="./assets/phone/app6/inside.png" class="app2-phoneimage" style="z-index: 4;"></img>
+                        <img src="./assets/phone/app2/border.png" class="app2-phoneimage" style="pointer-events: none; z-index: 1000;"></img>
+                    </div>
+
+                    <img src="./assets/phone/app4/so.png" id="app6-so" class="ia app4-so"></img>
+                    <p id="app6-text" style="left: 21%; top: 48%;" class="ia app1-inside-text"></p>
+
+
+                    <div id="window" class="window fw">
+                        <div id="windowHeader" class="window-header fwh">
+                            <span>feedback!!</span>
+                        </div>
+                        <div class="window-content">
+                            <p>thanks for visiting. please leave your pros/cons, issues, bugs, thoughts. completely anonymous. <b>tysm!</b></p>
+
+                            <p id="feedback">your feedback! (start typing with your keyboard)</p>
+                            <p id="statusMessage" style="color: black; display: none;"></p>
+                            <button id="submit" class="submit" type="submit">submit!</button>
+                        </div>
+                    </div>
+
+                    <div id="window" class="window">
+                        <div id="windowHeader" class="window-header">
+                            <span>credits</span>
+                        </div>
+                        <div class="window-content">
+                            <p>made by sipped<br><br>thanks:<br>lei mao - drawing<br>deep-fold - planets in the bg<br>bryantcodes.art - inspiration</p>
+                        </div>
+                    </div>
+
+                    <div id="window" class="window w2">
+                        <div id="windowHeader" class="window-header wh2">
+                            <span>what is sipped.org?</span>
+                        </div>
+                        <div class="window-content">
+                            <p>this is a portfolio/about me website made by, and about... sipped!!<br><br>STILL IN BETA!<br>made with vanilla html/css/js in VS code in just a week! 01/2025</p>
+                        </div>
+                    </div>
+
+                    <div id="window" class="window w3">
+                        <div id="windowHeader" class="window-header wh3">
+                            <span>contact me!!</span>
+                        </div>
+                        <div class="window-content">
+                            <p>i am not a freelance developer, and if i'll work on a project i dont want money<br><br>discord / @sippedaway<br>email / hello@sipped.org</p>
+                        </div>
+                    </div>
+
+                    <img src="./assets/phone/app6/bg.png" id="app6-back" class="ia app2-btn app2-back"></img>
+                    <img src="./assets/buttons/home.png" id="app6-back-icn" class="ia app2-btn app2-back"></img>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
