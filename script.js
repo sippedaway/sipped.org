@@ -6,6 +6,9 @@ const smovable = document.querySelector('.movable');
 const phoneContainer = document.getElementById("phone-container");
 const phoneImage = document.querySelector('.phone-image');
 
+const gbg = document.getElementById('gb-bg');
+const gi = document.getElementById('gb-i');
+
 const app1bg = document.getElementById('app1-bg');
 const app1i = document.getElementById('app1-i');
 const app1next = document.getElementById('app1-next');
@@ -64,6 +67,16 @@ const app4p2backicon = document.getElementById('app4p2-back-icn');
 const app4p2next = document.getElementById('app4p2-next');
 const app4p2nexticon = document.getElementById('app4p2-next-icn');
 
+const app4mi = document.getElementById('app4p3-mi');
+const app4miss = document.getElementById('app4p3-miss')
+const mitext = document.getElementById('mi-text');
+const app4p3visit = document.getElementById('app4p3-visit');
+const app4p3visiticon = document.getElementById('app4p3-visit-icn');
+const app4p3back = document.getElementById('app4p3-back');
+const app4p3backicon = document.getElementById('app4p3-back-icn');
+const app4p3next = document.getElementById('app4p3-next');
+const app4p3nexticon = document.getElementById('app4p3-next-icn');
+
 const app5bg = document.getElementById('app5-bg');
 const app5i = document.getElementById('app5-i');
 const terminal = document.getElementById('terminal');
@@ -83,6 +96,7 @@ const app2page = document.getElementById('app2-page');
 const app3page = document.getElementById('app3-page');
 const app4page = document.getElementById('app4-page1');
 const app4page2 = document.getElementById('app4-page2');
+const app4page3 = document.getElementById('app4-page3');
 const app4emptypage = document.getElementById('app4-emptypage');
 const app5page = document.getElementById('app5-page');
 const app6page = document.getElementById('app6-page');
@@ -101,6 +115,7 @@ let app2hasrun = false;
 let app3hasrun = false;
 let app4hasrun = false;
 let app4p2hasrun = false;
+let app4p3hasrun = false;
 let app4ephasrun = false;
 let app6hasrun = false;
 
@@ -133,15 +148,15 @@ function phoneOn() {
     content.style.scale = '1.4';
 
     content.style.transform = 'translate(-50%, -50%)';
-
-    phoneContainer.style.transform = 'translate(-47%, -43%)';
 }
 
 function phoneOff() {
     content.style.scale = '1';
 
-    phoneContainer.style.transform = `translate(-50%, -50%)`;
+    phoneContainer.style.transform = `translate(-45%, -45%)`;
 }
+
+phoneOff();
 
 function openHomePage() {
     phoneOff();
@@ -504,6 +519,7 @@ function openApp4() {
     homepage.style.display = 'none';
     app4page.style.display = 'flex';
     app4page2.style.display = 'none';
+    app4page3.style.display = 'none';
     app4emptypage.style.display = 'none';
 
     app4visit.style.scale = '0';
@@ -582,7 +598,7 @@ function openApp4() {
     })
 
     app4nexticon.addEventListener('mouseup', () => {
-        openApp4Page2();
+        openApp4Page3();
     })
 
     app4nexticon.addEventListener('mouseleave', () => {
@@ -620,6 +636,7 @@ function openApp4Page2() {
     homepage.style.display = 'none';
     app4page.style.display = 'none';
     app4page2.style.display = 'flex';
+    app4page3.style.display = 'none';
     app4emptypage.style.display = 'none';
 
     app4lm.style.scale = '0';
@@ -681,7 +698,7 @@ function openApp4Page2() {
     })
 
     app4p2backicon.addEventListener('mousedown', () => {
-        openApp4();
+        openApp4Page3();
     })
 
     app4p2backicon.addEventListener('mouseleave', () => {
@@ -702,7 +719,7 @@ function openApp4Page2() {
         cursor.style.height = '60px';
     })
 
-    app4p2nexticon.addEventListener('mouseup', () => {
+    app4p2nexticon.addEventListener('mousedown', () => {
         openApp4EmptyPage();
     })
 
@@ -730,6 +747,123 @@ function openApp4Page2() {
     } else {
         sotext.innerHTML = 'sipped.org/<br><br>"the coolest about me page ever"<br>- definitely not me<br><br>interactive and fun<br>portfolio page!!<br>learn more and<br>credits:'
         app4p2ShowAll();
+    }
+}
+
+function openApp4Page3() {
+    phoneOn();
+
+    mitext.textContent = '';
+
+    homepage.style.display = 'none';
+    app4page.style.display = 'none';
+    app4page2.style.display = 'none';
+    app4page3.style.display = 'flex';
+    app4emptypage.style.display = 'none';
+
+    app4p3visit.style.scale = '0';
+    app4p3visiticon.style.scale = '0';
+    app4p3back.style.scale = '0';
+    app4p3backicon.style.scale = '0';
+    app4p3next.style.scale = '0';
+    app4p3nexticon.style.scale = '0';
+
+    busy = 1;
+
+    function app4p3ShowAll() {
+        app4p3visit.style.scale = '1';
+        app4p3visiticon.style.scale = '1';
+        app4p3back.style.scale = '1';
+        app4p3backicon.style.scale = '1';
+        app4p3next.style.scale = '1';
+        app4p3nexticon.style.scale = '1';
+    }
+
+    setTimeout(() => {
+        app4p3ShowAll();
+    }, 1500);
+
+    app4p3visiticon.addEventListener('mouseenter', () => {
+        app4p3visit.style.scale = "1.1";
+        app4p3visiticon.style.scale = "1.5";
+
+        cursor.style.backgroundImage = "url('./assets/Cursor/visit.png')"
+        cursor.style.width = '60px';
+        cursor.style.height = '60px';
+    })
+
+    app4p3visiticon.addEventListener('mouseleave', () => {
+        app4p3visit.style.scale = "1";
+        app4p3visiticon.style.scale = "1";
+
+        cursor.style.backgroundImage = "url('./assets/Cursor/Cursor.png')"
+        cursor.style.width = '23px';
+        cursor.style.height = '23px';
+    })
+
+    app4p3visiticon.addEventListener('mousedown', () => {
+        window.open("https://message.sipped.org", "_blank");
+    })
+
+    app4p3backicon.addEventListener('mouseenter', () => {
+        app4p3back.style.scale = "1.1";
+        app4p3backicon.style.scale = "1.8";
+
+        cursor.style.backgroundImage = "url('./assets/Cursor/back.png')"
+        cursor.style.width = '60px';
+        cursor.style.height = '60px';
+    })
+
+    app4p3backicon.addEventListener('mousedown', () => {
+        openApp4();
+    })
+
+    app4p3backicon.addEventListener('mouseleave', () => {
+        app4p3back.style.scale = "1";
+        app4p3backicon.style.scale = "1";
+
+        cursor.style.backgroundImage = "url('./assets/Cursor/Cursor.png')"
+        cursor.style.width = '23px';
+        cursor.style.height = '23px';
+    })
+
+    app4p3nexticon.addEventListener('mouseenter', () => {
+        app4p3next.style.scale = "1.1";
+        app4p3nexticon.style.scale = "1.8";
+
+        cursor.style.backgroundImage = "url('./assets/Cursor/next.png')"
+        cursor.style.width = '60px';
+        cursor.style.height = '60px';
+    })
+
+    app4p3nexticon.addEventListener('mouseup', () => {
+        openApp4Page2();
+    })
+
+    app4p3nexticon.addEventListener('mouseleave', () => {
+        app4p3next.style.scale = "1";
+        app4p3nexticon.style.scale = "1";
+
+        cursor.style.backgroundImage = "url('./assets/Cursor/Cursor.png')"
+        cursor.style.width = '23px';
+        cursor.style.height = '23px';
+    })
+
+    app4mi.addEventListener('mouseenter', () => {
+        app4mi.style.scale = "1.1";
+    })
+
+    app4mi.addEventListener('mouseleave', () => {
+        app4mi.style.scale = "1";
+    })
+
+    if (!app4p3hasrun) {
+        app4p3hasrun = true;
+        mitext.textContent = '';
+        writeTextByLetter('message.sipped.org/<br><br>write a message with<br>thoughts, goals,<br>predictions & more,<br>and then read it a<br>year later<br><br>free. no ads.<br>out now', 'mi-text', 12);
+    } else {
+        mitext.innerHTML = 'message.sipped.org/<br><br>write a message with<br>thoughts, goals,<br>predictions & more,<br>and then read it a<br>year later<br><br>free. no ads.<br>out now'
+        app4p3ShowAll();
     }
 }
 
@@ -1022,6 +1156,30 @@ function openApp6() {
 document.addEventListener("DOMContentLoaded", () => {
     homepage.style.display = 'flex';
     app1page.style.display = 'none';
+
+    /////////////// HOVERS FOR GITHUB ICON
+
+    gi.addEventListener("mouseenter", () => {
+        gbg.style.scale = "0.8";
+        gi.style.scale = "1.2";
+
+        cursor.style.backgroundImage = "url('./assets/Cursor/github.png')"
+        cursor.style.width = "60px";
+        cursor.style.height = "60px";
+    })
+
+    gi.addEventListener("mouseleave", () => {
+        gbg.style.scale = "0.7";
+        gi.style.scale = "0.7";
+
+        cursor.style.backgroundImage = "url('./assets/Cursor/Cursor.png')"
+        cursor.style.width = "23px";
+        cursor.style.height = "23px";
+    })
+
+    gi.addEventListener("mousedown", () => {
+        window.open('https://github.com/sippedaway', '_blank');
+    })
 
     /////////////// HOVERS FOR PAGE 1
 
