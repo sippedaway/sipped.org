@@ -30,6 +30,15 @@ sorted by importancy and rush to fix
 made by sipped in one week in january 2025. uses pure html/css/js and is currently my website [sipped.org](https://sipped.org/)'s main page.
 
 ## version
+#### 1.1
+- **testing**. send feedback in app 6 or to hello@sipped.org
+added:
+- github icon in top left
+- 'message in a bottle' added to projects app
+fixed:
+- phone being not centered and offset
+being worked on:
+- mobile version
 #### 1.0
 - **testing**
 - send feedback in app 6 or to hello@sipped.org
