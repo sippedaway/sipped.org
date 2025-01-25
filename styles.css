@@ -268,6 +268,13 @@ body {
     left: 61%;
 }
 
+.gb {
+    scale: 0.7;
+    top: -1%;
+    left: 0%;
+    z-index: 1000;
+}
+
 .app1-next {
     top: 71%;
     left: 22%;
@@ -330,6 +337,14 @@ body {
     height: 360px;
 
     top: 17%;
+    left: 38%;
+}
+
+.app4-miss {
+    width: 576px;
+    height: 324px;
+
+    top: 22%;
     left: 38%;
 }
 
