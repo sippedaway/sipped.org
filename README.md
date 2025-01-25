@@ -18,13 +18,10 @@ sorted by importancy and rush to fix
 
 #### A: long loading times
 - reason: no code optimization
-- estimated fix: 1.1
+- estimated fix: 1.2
 #### B: mobile version
 - reason: still in testing
-- estimated fix: 1.1
-#### C: phone positioning being not centered, usually offset
-- reason: website tested on a website with smaller screen width
-- estimated fix: 1.1
+- estimated fix: 1.2
 
 ## development
 made by sipped in one week in january 2025. uses pure html/css/js and is currently my website [sipped.org](https://sipped.org/)'s main page.
