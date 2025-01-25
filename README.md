@@ -11,7 +11,9 @@
 # [sipped.org](https://sipped.org)
 personal portfolio website. interactive, unique, fun.
 
-### known issues
+[<kbd> <br> sipped.org <br> </kbd>](https://sipped.org)
+
+## known issues
 sorted by importancy and rush to fix
 
 #### A: long loading times
@@ -24,16 +26,16 @@ sorted by importancy and rush to fix
 - reason: website tested on a website with smaller screen width
 - estimated fix: 1.1
 
-### development
+## development
 made by sipped in one week in january 2025. uses pure html/css/js and is currently my website [sipped.org](https://sipped.org/)'s main page.
 
-### version
+## version
 #### 1.0
 - **testing**
 - send feedback in app 6 or to hello@sipped.org
 - no mobile version
 
-### credits
+## credits
 - [sipped](https://github.com/sippedaway)
 #### thanks:
 - [deep-fold](deep-fold.itch.io/pixel-planet-generator): planet assets in the background
