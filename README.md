@@ -13,22 +13,13 @@ personal portfolio website. interactive, unique, fun.
 
 [<kbd> <br> sipped.org <br> </kbd>](https://sipped.org)
 
-## known issues
-sorted by importancy and rush to fix
-
-#### A: long loading times
-- reason: no code optimization
-- estimated fix: 1.2
-#### B: mobile version
-- reason: still in testing
-- estimated fix: 1.2
-
 ## development
 made by sipped in one week in january 2025. uses pure html/css/js and is currently my website [sipped.org](https://sipped.org/)'s main page.
 
 ## version
 #### 1.1
 - **testing**. send feedback in app 6 or to hello@sipped.org
+- now hosted on github pages
   
 added:
 - github icon in top left
@@ -36,6 +27,7 @@ added:
   
 fixed:
 - phone being not centered and offset
+- github icon visible in mobile temporary page
   
 being worked on:
 - mobile version
