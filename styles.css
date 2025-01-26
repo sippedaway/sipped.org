@@ -665,7 +665,7 @@ body {
     .bg,
     .bgtext,
     .page,
-    .cursor {
+    .cursor, .gb {
         display: none;
     }
 
