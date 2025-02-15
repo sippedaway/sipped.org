@@ -8,6 +8,8 @@
 [![GitHub last commit](https://img.shields.io/github/last-commit/sippedaway/sipped.org
 )](#)
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/K3K31AMKAQ)
+
 # [sipped.org](https://sipped.org)
 personal portfolio website. interactive, unique, fun.
 
@@ -17,8 +19,12 @@ personal portfolio website. interactive, unique, fun.
 made by sipped in one week in january 2025. uses pure html/css/js and is currently my website [sipped.org](https://sipped.org/)'s main page.
 
 ## version
+#### 1.2 (Coming soon)
+Testing phases
+- get an early look and beta access by supporting me on Ko-fi: https://ko-fi.com/sipped
 #### 1.1
-- **testing**. send feedback in app 6 or to hello@sipped.org
+Testing phases
+- send feedback in app 6 or to hello@sipped.org
 - now hosted on github pages
   
 added:
@@ -32,12 +38,14 @@ fixed:
 being worked on:
 - mobile version
 #### 1.0
-- **testing**
+Testing phases
 - send feedback in app 6 or to hello@sipped.org
 - no mobile version
 
 ## credits
 - [sipped](https://github.com/sippedaway)
+
+Support me and get early access to sipped.org (and all my other projects) updates, changes and early looks __for as low as $3__: https://ko-fi.com/sipped
 #### thanks:
 - [deep-fold](deep-fold.itch.io/pixel-planet-generator): planet assets in the background
 - [lei-mao](https://leimao.github.io/blog/HTML-Canvas-Mouse-Touch-Drawing/): drawing
