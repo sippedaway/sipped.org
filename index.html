@@ -8,6 +8,15 @@
     <link rel="icon" href="./assets/favicon.png">
     <link rel="stylesheet" href="styles.css">
 
+    <meta name="description" content="hi, I'm sipped and I create unique web experiences">
+    <meta name="keywords" content="website, opensource, portfolio, developer">
+    <meta name="author" content="sippedaway">
+    <meta property="og:title" content="sipped.org">
+    <meta property="og:description" content="hi, I'm sipped and I create unique web experiences">
+    <meta property="og:image" content="https://raw.githubusercontent.com/sippedaway/sipped.org/refs/heads/main/pictures/github%20sippedorg.png">
+    <meta property="og:url" content="https://sipped.org">
+    <meta property="og:type" content="website">
+
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
 </head>
@@ -20,17 +29,148 @@
 
     <div id="mobile-screen">
         <div class="message">
-            <h1>well, no..</h1>
-            <p>this website is extremely unoptimized and will not work with mobile/smaller screens. i am SO sorry but a mobile sipped.org version will come out in the coming weeks i hope :)</p>
+            <h1>Not yet</h1>
+            <p>This website is not available for mobile devices</p>
+            <h3>Why?</h3>
+            <p>Many things get broken when trying to load this website on smaller screens, from animations to icons to all content entirely. And usually, loading speeds are extremely long.</p>
+
+            <h3>but...</h3>
+            <p>I am working on a version that will remain unique and original, but for smaller devices! For now, feel free to visit my GitHub.</p>
+
+            <button class="hc-pu-button" onclick="window.location.href='https://github.com/sippedaway'">GitHub</button>
         </div>
     </div>
 
-    <img src="./assets/phone/github/bg.png" id="gb-bg" class="ia gb"></img>
-    <img src="./assets/phone/github/icon.png" id="gb-i" class="ia gb"></img>
+    <!-- HCPU -->
+
+
+    <div id="hc-pu" style="display: none;">
+        <img src="./assets/buttons/close-bg.png" alt="" class="ia hcpc" id="hc-pu-close-popup"></img>
+        <img src="./assets/buttons/close-i.png" alt="" class="ia hcpc" id="hc-pu-c-icon"></img>
+
+        <div class="hc-pu-window" id="hc-pu-window-2" style="left:60%; top:30%;">
+            <div class="hc-pu-header">
+                <span class="hc-pu-title">visit my github</span>
+                <button class="hc-pu-close">X</button>
+            </div>
+            <div class="hc-pu-content">
+                <p>code, projects, docs, etc</p>
+                <button id="hc-ghb" class="hc-pu-button">github</button>
+            </div>
+        </div>
+
+        <div class="hc-pu-window" id="hc-pu-window-3" style="left:50%; top:60%;">
+            <div class="hc-pu-header">
+                <span class="hc-pu-title">VERSION</span>
+                <button class="hc-pu-close">X</button>
+            </div>
+            <div class="hc-pu-content">
+                <p><b>1.2</b></p>
+                <p>- completely new stuff: pc!<br>- showray & spotdb added to projects<br>- completely revamped drawing</p>
+            </div>
+        </div>
+
+        <div class="hc-pu-window" id="hc-pu-window-3" style="left:25%; top:70%;">
+            <div class="hc-pu-header">
+                <span class="hc-pu-title">contact me</span>
+                <button class="hc-pu-close">X</button>
+            </div>
+            <div class="hc-pu-content">
+                <p><b>email</b></p>
+                <p><b>hello@sipped.org</b><br><br>for business inquiries: <b>business@sipped.org</b></p>
+            </div>
+        </div>
+
+        <div class="hc-pu-window" id="hc-pu-window-3" style="left:10%; top:30%;">
+            <div class="hc-pu-header">
+                <span class="hc-pu-title">feedback</span>
+                <button class="hc-pu-close">X</button>
+            </div>
+            <div class="hc-pu-content">
+                <p>thanks for visiting. please leave your pros/cons, issues, bugs, thoughts. completely anonymous.</p>
+
+                <textarea id="feedback" placeholder="your feedback here!"></textarea>
+                <p id="statusMessage" style="color: black; display: none;"></p>
+                <button id="submit" class="hc-pu-button" style="background: green; margin-top: 5px;" type="submit">submit!</button>
+            </div>
+        </div>
+
+        
+
+        <div class="hc-pu-file" style="left: 20%; top: 10%;">
+            <img src="./assets/hcpu/file.png" alt="">
+            <div class="hc-pu-file-label">projects</div>
+        </div>
+
+        <div id="hc-pu-file-popup" style="display: none;">
+            <button id="hc-pu-file-back"><-- back</button>
+
+            <div id="hc-pu-file-content">
+                <h1>PROJECT LIBRARY</h1>
+                <p><a href="https://github.com/sippedaway/">github-sippedaway.txt</a></p>
+    
+                <div id="hc-pu-carousel">
+                    <button id="hc-pu-carousel-left"><--</button>
+                    <div id="hc-pu-carousel-content">
+
+                        <div class="hc-pu-carousel-item active">
+                            <h2>Showray</h2>
+                            <p>create music release pages for free and no attribution required</p>
+
+                            <h4>STATUS</h4>
+                            <p>v1.0. <b>showray.sipped.org.</b></p>
+
+                            <h4>CREDITS</h4>
+                            <p>sipped.</p>
+                        </div>
+                        <div class="hc-pu-carousel-item active">
+                            <h2>SpotDB</h2>
+                            <p>a spotify database, search and get information about any spotify album, artist, user, track, etc...</p>
+
+                            <h4>STATUS</h4>
+                            <p>v1.0. <b>db.sipped.org.</b></p>
+
+                            <h4>CREDITS</h4>
+                            <p>sipped.</p>
+                        </div>
+                        <div class="hc-pu-carousel-item">
+                            <h2>Message in a Bottle</h2>
+                            <p>leave a message for yourself and respond a year later.</p>
+
+                            <h4>STATUS</h4>
+                            <p>unavailable. hosting service issues.</b></p>
+
+                            <h4>CREDITS</h4>
+                            <p>sipped.</p>
+                        </div>
+                        <div class="hc-pu-carousel-item">
+                            <h2>Audomark</h2>
+                            <p>rank your favorite music and artists, share statistics and more.</p>
+
+                            <h4>STATUS</h4>
+                            <p>unavailable. hosting service issues.</b></p>
+
+                            <h4>CREDITS</h4>
+                            <p>sipped.</p>
+                        </div>
+                        <div class="hc-pu-carousel-item">
+                            <h2>sipped-org.txt</h2>
+                            <p>coming soon:<br>- mobile version<br>- fastererer loading speeds</p>
+                        </div>
+                    </div>
+                    <button id="hc-pu-carousel-right">--></button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Page -->
+
+    <img src="./assets/buttons/next-bg.png" id="hc-bg" class="ia hc"></img>
+    <img src="./assets/buttons/down-arrow.png" id="hc-i" class="ia hc"></img>
 
     <div class="bg">
-        <img src="./assets/bar/bar.png" class="bgitem barbg"><img>
-
         <img src="./assets/bg/0.png" class="bgitem l0"><img>
         <img src="./assets/bg/1.png" class="bgitem l1"><img>
         <img src="./assets/bg/2.png" class="bgitem movable"><img>
@@ -69,8 +209,8 @@
                     <img src="./assets/phone/app5/bg.png" id="app5-bg" class="ia app5"></img>
                     <img src="./assets/phone/app5/icon.png" id="app5-i" class="ia app5"></img>
 
-                    <img src="./assets/phone/app6/bg.png" id="app6-bg" class="ia app6"></img>
-                    <img src="./assets/phone/app6/icon.png" id="app6-i" class="ia app6"></img>
+                    <img src="./assets/phone/github/bg.png" id="app6-bg" class="ia app6"></img>
+                    <img src="./assets/phone/github/icon.png" id="app6-i" class="ia app6"></img>
                 </div>
 
                 <div class="app1-page" id="app1-page" hidden>
@@ -97,21 +237,55 @@
                     <img src="./assets/phone/app1/morecatz.png" id="cat" class="ia app1p2-cat"></img>
 
                     <img src="./assets/buttons/next-bg.png" id="app1p2-next" class="ia app1-next"></img>
-                    <img src="./assets/buttons/home-icon.png" id="app1p2-next-icn" class="ia app1-next" style="left: 22%;"></img>
+                    <img src="./assets/buttons/next-icon.png" id="app1p2-next-icn" class="ia app1-next" style="left: 22%;"></img>
+                </div>
+
+                <div class="app1-page" id="app1-page3" hidden>
+                    <img src="./assets/phone/app1/inside.png" class="phone-image"></img>
+
+                    <img src="./assets/phone/app1/tih.png" id="tih" class="ia app1p3-tih"></img>
+
+                    <img src="./assets/buttons/bg2.png" id="app1p3-em" class="ia app1-next app1p3-em"></img>
+                    <img src="./assets/buttons/em-icon.png" id="app1p3-em-icn" class="ia app1-next app1p3-em"></img>
+
+                    <img src="./assets/buttons/next-bg.png" id="app1p3-next" class="ia app1-next"></img>
+                    <img src="./assets/buttons/home-icon.png" id="app1p3-next-icn" class="ia app1-next" style="left: 22%;"></img>
                 </div>
 
                 <div class="app2-page" id="app2-page" hidden>
                     <div class="app2-phonecontainer">
-                        <img src="./assets/phone/app2/bg.png" class="app2-phoneimage" style="z-index: 4;"></img>
+                        <img src="./assets/phone/app2/bg.png" id="app2-c-bg" class="app2-phoneimage" style="z-index: 4;"></img>
                         <img src="./assets/phone/app2/border.png" class="app2-phoneimage" style="pointer-events: none; z-index: 7;"></img>
                     </div>
 
                     <div id="canvas_div">
-                        <canvas id="canvas" width="853" height="427"></canvas>
+                        <canvas id="canvas" width="935" height="420"></canvas>
                     </div>
 
-                    <img src="./assets/phone/app2/draw-bg.png" id="app2-clear" class="ia app2-btn"></img>
-                    <img src="./assets/buttons/draw-clear.png" id="app2-clear-icn" class="ia app2-btn"></img>
+                    <div id="app2-options" style="display: none;">
+                        <img src="./assets/phone/app2/options.png" class="ia app2-btn app2-o"></img>
+
+                        <div class="ia app2-csc app2-csc-size">
+                            <input type="range" min="0" max="100" value="11" class="ia app2-csc-s" id="size-slider">
+                        </div>
+
+                        <div class="ia app2-csc">
+                            <input type="range" min="0" max="360" value="150" class="ia app2-csc-s" id="color-slider">
+                        </div>
+
+                        <div class="ia app2-csc app2-csc-b">
+                            <input type="range" min="0" max="360" value="205" class="ia app2-csc-s" id="bg-slider">
+                        </div>
+
+                        <img src="./assets/buttons/next-bg.png" id="app2-o-c" class="ia app1-next app2-o-c"></img>
+                        <img src="./assets/buttons/clear.png" id="app2-o-c-icn" class="ia app1-next app2-o-c"></img>
+                    </div>
+
+                    <img src="./assets/phone/app2/draw-bg.png" id="app2-share" class="ia app2-btn app2-s-btn"></img>
+                    <img src="./assets/buttons/share.png" id="app2-share-icn" class="ia app2-btn app2-s-btn"></img>
+
+                    <img src="./assets/phone/app2/draw-bg.png" id="app2-clear" style="left: 71%;" class="ia app2-btn"></img>
+                    <img src="./assets/buttons/options.png" id="app2-clear-icn" style="left: 71%;" class="ia app2-btn"></img>
 
                     <img src="./assets/phone/app2/draw-bg.png" id="app2-back" class="ia app2-btn app2-back"></img>
                     <img src="./assets/buttons/home.png" id="app2-back-icn" class="ia app2-btn app2-back"></img>
@@ -140,7 +314,7 @@
                     <img src="./assets/phone/app4/inside.png" class="phone-image"></img>
 
                     <img src="./assets/phone/app4/bg.png" id="app4-back" class="ia app2-btn"></img>
-                    <img src="./assets/buttons/home-white.png" id="app4-back-icn" class="ia app2-btn"></img>
+                    <img src="./assets/buttons/leftarrow.png" id="app4-back-icn" class="ia app2-btn"></img>
 
                     <img src="./assets/phone/app4/bg.png" id="app4-next" class="ia app2-btn app4-back"></img>
                     <img src="./assets/buttons/rightarrow.png" id="app4-next-icn" class="ia app2-btn app4-back"></img>
@@ -149,8 +323,8 @@
                     <img src="./assets/phone/app4/am.png" id="app4-am" class="ia app4-am"></img>
                     <img src="./assets/phone/app4/am-ss.png" id="app4-amss" class="ia app4-amss"></img>
 
-                    <img src="./assets/buttons/next-bg.png" id="app4-visit" class="ia app1-next" style="top: 62%;"></img>
-                    <img src="./assets/buttons/visit.png" id="app4-visit-icn" class="ia app1-next" style="top: 62%; left: 22%;"></img>
+                    <img src="./assets/buttons/next-bg.png" id="app4-visit" class="ia app1-next" style="top: 60%;"></img>
+                    <img src="./assets/buttons/visit.png" id="app4-visit-icn" class="ia app1-next" style="top: 60%; left: 22%;"></img>
                 </div>
 
                 <div class="app4-page" id="app4-page3" hidden>
@@ -162,12 +336,12 @@
                     <img src="./assets/phone/app4/bg.png" id="app4p3-next" class="ia app2-btn app4-back"></img>
                     <img src="./assets/buttons/rightarrow.png" id="app4p3-next-icn" class="ia app2-btn app4-back"></img>
 
-                    <p id="mi-text" style="top: 46%; left: 21%;" class="ia app1-inside-text"></p>
+                    <p id="mi-text" style="top: 45%; left: 21%;" class="ia app1-inside-text"></p>
                     <img src="./assets/phone/app4/mi.png" id="app4p3-mi" class="ia app4-so"></img>
                     <img src="./assets/phone/app4/mi-ss.png" id="app4p3-miss" class="ia app4-miss"></img>
 
-                    <img src="./assets/buttons/next-bg.png" id="app4p3-visit" class="ia app1-next" style="top: 62%;"></img>
-                    <img src="./assets/buttons/visit.png" id="app4p3-visit-icn" class="ia app1-next" style="top: 62%; left: 22%;"></img>
+                    <img src="./assets/buttons/next-bg.png" id="app4p3-visit" class="ia app1-next" style="top: 60%;"></img>
+                    <img src="./assets/buttons/visit.png" id="app4p3-visit-icn" class="ia app1-next" style="top: 60%; left: 22%;"></img>
                 </div>
 
                 <div class="app4-page" id="app4-page2" hidden>
@@ -183,8 +357,42 @@
                     <img src="./assets/phone/app4/so.png" id="app4-so" class="ia app4-so"></img>
                     <img src="./assets/phone/app4/so-ss.png" id="app4-soss" class="ia app4-soss"></img>
 
-                    <img src="./assets/buttons/next-bg.png" id="app4-lm" class="ia app1-next" style="top: 62%;"></img>
-                    <img src="./assets/buttons/learnmore.png" id="app4-lm-icn" class="ia app1-next" style="top: 62%; left: 22%;"></img>
+                    <img src="./assets/buttons/next-bg.png" id="app4-lm" class="ia app1-next" style="top: 60%;"></img>
+                    <img src="./assets/buttons/learnmore.png" id="app4-lm-icn" class="ia app1-next" style="top: 60%; left: 22%;"></img>
+                </div>
+
+                <div class="app4-page" id="app4-page4" hidden>
+                    <img src="./assets/phone/app4/inside4.png" class="phone-image"></img>
+
+                    <img src="./assets/phone/app4/bg.png" id="app4p4-back" class="ia app2-btn"></img>
+                    <img src="./assets/buttons/leftarrow.png" id="app4p4-back-icn" class="ia app2-btn"></img>
+
+                    <img src="./assets/phone/app4/bg.png" id="app4p4-next" class="ia app2-btn app4-back"></img>
+                    <img src="./assets/buttons/rightarrow.png" id="app4p4-next-icn" class="ia app2-btn app4-back"></img>
+
+                    <p id="sr-text" style="left: 21%; width: 400px;" class="ia app4p2-inside-text"></p>
+                    <img src="./assets/phone/app4/sr.png" id="app4p4-sr" class="ia app4-sr"></img>
+                    <img src="./assets/phone/app4/sr-ss.png" id="app4p4-srss" class="ia app4-srss"></img>
+
+                    <img src="./assets/buttons/next-bg.png" id="app4p4-visit" class="ia app1-next" style="top: 60%;"></img>
+                    <img src="./assets/buttons/visit.png" id="app4p4-visit-icn" class="ia app1-next" style="top: 60%; left: 22%;"></img>
+                </div>
+
+                <div class="app4-page" id="app4-page5" hidden>
+                    <img src="./assets/phone/app4/inside5.png" class="phone-image"></img>
+
+                    <img src="./assets/phone/app4/bg.png" id="app4p5-back" class="ia app2-btn"></img>
+                    <img src="./assets/buttons/home-white.png" id="app4p5-back-icn" class="ia app2-btn"></img>
+
+                    <img src="./assets/phone/app4/bg.png" id="app4p5-next" class="ia app2-btn app4-back"></img>
+                    <img src="./assets/buttons/rightarrow.png" id="app4p5-next-icn" class="ia app2-btn app4-back"></img>
+
+                    <p id="sd-text" style="left: 19%; width: 400px;" class="ia app4p2-inside-text app4p5-it"></p>
+                    <img src="./assets/phone/app4/sd.png" id="app4p5-sd" class="ia app4-sr"></img>
+                    <img src="./assets/phone/app4/sd-ss.png" id="app4p5-srss" class="ia app4-srss"></img>
+
+                    <img src="./assets/buttons/next-bg.png" id="app4p5-visit" class="ia app1-next" style="top: 60%;"></img>
+                    <img src="./assets/buttons/visit.png" id="app4p5-visit-icn" class="ia app1-next" style="top: 60%; left: 22%;"></img>
                 </div>
 
                 <div class="app4-emptypage" id="app4-emptypage" hidden>
@@ -195,8 +403,8 @@
                     <img src="./assets/phone/app4/bg.png" id="app4ep-back" class="ia app2-btn"></img>
                     <img src="./assets/buttons/leftarrow.png" id="app4ep-back-icn" class="ia app2-btn"></img>
 
-                    <img src="./assets/buttons/next-bg.png" id="app4ep-bg" class="ia app1-next" style="top: 62%;"></img>
-                    <img src="./assets/buttons/home-icon.png" id="app4ep-icn" class="ia app1-next" style="top: 62%; left: 22%;"></img>
+                    <img src="./assets/buttons/next-bg.png" id="app4ep-bg" class="ia app1-next" style="top: 60%;"></img>
+                    <img src="./assets/buttons/home-icon.png" id="app4ep-icn" class="ia app1-next" style="top: 60%; left: 22%;"></img>
                 </div>
 
                 <div class="app5-page" id="app5-page" hidden>
@@ -264,11 +472,8 @@
         </div>
     </div>
 
-
-
-
-
     <script src="script.js" defer></script>
+    <script src="./assets/phone/app5/response-code.js" defer></script>
 </body>
 
 </html>
