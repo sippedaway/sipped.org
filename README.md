@@ -19,9 +19,26 @@ personal portfolio website. interactive, unique, fun.
 made by sipped in one week in january 2025. uses pure html/css/js and is currently my website [sipped.org](https://sipped.org/)'s main page.
 
 ## version
-#### 1.2 (Coming soon)
-Testing phases
-- get an early look and beta access by supporting me on Ko-fi: https://ko-fi.com/sipped
+### 1.3 - coming soon!
+- Get early news and updates by supporting me with [Ko-fi](https://ko-fi.com/sipped)
+### 1.2
+**TESTING PHASES!**
+
+**ADDED**
+- PC popup at the bottom - new content!!!
+- Ko-Fi and GitHub buttons in the phone
+- Updated phone design
+- Updated Bio app background
+- 'Send the drawing to me' feature added to Draw app
+- Options popup to Draw app
+- Size, Color and Background Color options to Draw app
+- 150+ new prompts in Terminal app
+- [SpotDB](https://github.com/sippedaway/SpotDB) and [Showray](https://github.com/sippedaway/Showray) added to Projects app
+- Log messages for people looking through the code (Inspired by bryantcodes.art) :)
+
+**REMOVED / REPLACED**
+- Clear button in the bottom of the Draw app
+- FAQ App and Photos App
 #### 1.1
 Testing phases
 - send feedback in app 6 or to hello@sipped.org
