@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found</title>
+  <!-- Load Inter font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Dark gradient background and Inter font */
+    body {
+        background: linear-gradient(135deg, #2e2e2e, #1a1a1a);
+        background-size: 400% 400%;
+      animation: gradientAnimation 35s ease infinite;
+      color: #ffffff;
+      font-family: 'Inter', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    @keyframes gradientAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .container {
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+      height: 5rem;
+    }
+    p {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 id="header">404</h1>
+    <p><b>Are you lost?</b> The page you’re looking for doesn’t exist.</p>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.pathname === "/blog") {
+        window.location.href = "https://blog.sipped.org";
+        return;
+      }
+
+      const header = document.getElementById("header");
+      const texts = ["404", "Page not found"];
+      let current = 0;
+
+      function animateText() {
+        const nextIndex = (current + 1) % texts.length;
+        const nextText = texts[nextIndex];
+
+        function deleteText() {
+          const currentContent = header.textContent;
+          if (currentContent.length > 0) {
+            header.textContent = currentContent.slice(0, -1);
+            setTimeout(deleteText, 100);
+          } else {
+            setTimeout(typeText, 500);
+          }
+        }
+        
+        let charIndex = 0;
+        function typeText() {
+          if (charIndex < nextText.length) {
+            header.textContent += nextText.charAt(charIndex);
+            charIndex++;
+            setTimeout(typeText, 100);
+          } else {
+            current = nextIndex;
+            setTimeout(animateText, 500);
+          }
+        }
+        
+        setTimeout(deleteText, 500);
+      }
+      
+      animateText();
+    });
+  </script>
+</body>
+</html>
