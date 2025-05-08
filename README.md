@@ -20,10 +20,13 @@ made by sipped in one week in january 2025. uses pure html/css/js and is current
 
 ## version
 ### 2.0 - coming soon!
-- **Estimated release date**: June ?? 2025
-- **Complete remake**: rewritten from the ground up with feedback in mind
-- **Optimizations, new features, and more...**
-- Get early news and updates by supporting me with [Ko-fi](https://ko-fi.com/sipped)
+- Get early news, updates and early access by supporting me with [Ko-fi](https://ko-fi.com/sipped)
+- **Estimated release date**: May ?? 2025
+- **Complete remake**: rewritten from the ground up with feedback & user experience in mind
+- **Mobile support**: as everyone wanted (sob)
+- **Optimizations**: FINALLY the horrible code is *slightly better :)
+- **NEW** things to find and notice! + each app updated
+
 ### 1.2
 **TESTING PHASES!**
 
